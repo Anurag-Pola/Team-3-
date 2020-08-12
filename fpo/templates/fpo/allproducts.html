@@ -1,0 +1,9 @@
+<h2> all products </h2>
+
+
+    {% for product in products %}
+    <ui>
+            <a href="{% url 'fpo:updateproduct' product.id %}"><h4> {{ product.productname }}</h4></a>
+            
+    </ui>  
+    {% endfor %}  

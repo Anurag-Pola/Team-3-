@@ -1,0 +1,13 @@
+<h4> view or update product </h4>
+<form method="POST" >
+
+{% csrf_token %}
+
+{{ form.as_p }}
+
+
+<button type="submit">save</button>
+
+<a href="{% url 'fpo:deleteproduct' product.pk %}" class="btn btn-danger float-right">Delete</a>
+
+</form>

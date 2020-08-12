@@ -1,0 +1,6 @@
+  <h2>Confirm deletion</h2>
+  <p>Are you sure you want to delete the post <strong>"{{ post.title }}"</strong>? There is no going back.</p>
+  <form method="POST">
+    {% csrf_token %}
+    <button type="submit">Yes, I'm sure</button>
+    <a href="{% url 'fpo:updateproduct' product.pk %}" class="btn btn-outline-secondary btn-lg" role="button">Nevermind</a>

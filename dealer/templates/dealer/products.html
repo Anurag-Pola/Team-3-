@@ -1,0 +1,10 @@
+<h2> all products </h2>
+
+
+    {% for product in products %}
+    <ui>
+             <h4> {{ product.productname }}</h4>
+             <h4>{{ product.description }}</h4>
+             <h4>{{ product.quantity }}</h4><br>
+    </ui>  
+    {% endfor %}  

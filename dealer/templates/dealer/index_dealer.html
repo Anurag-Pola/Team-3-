@@ -1,0 +1,9 @@
+<h1>Welcome</h1>
+{% if user.is_authenticated%}
+<h2>logged in as dealer</h2>
+<a href="{% url 'accounts:logout' %}">Logout</a> <br>
+<a href="{% url 'dealer:fpoproducts' %}">all products</a><br>
+{% else %}
+<a href="{% url 'accounts:register' %}">Register</a> <br>
+<a href="{% url 'accounts:login' %}">Login</a> 
+{% endif %}
